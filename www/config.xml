@@ -51,9 +51,37 @@
     
     <access origin="*" subdomains="true" />
     <access origin="*.force.com" subdomains="true" />
-    <access origin="http://salesforce.com" subdomains="true" />
+    <access origin="*.salesforce.com" subdomains="true" />
     <access origin="ajax.microsoft.com" subdomains="true"  />
     <access origin="code.jquery.com" subdomains="true" />
     <access origin="ajax.googleapis.com" subdomains="true" />
-    <gap:plugin name="ChildBrowser" /> <!-- latest release -->  
+    <gap:plugin name="ChildBrowser" />
+    <gap:plugin name="SFSDKInfoPlugin" />
+    <gap:plugin name="SFTestRunnerPlugin" />
+    <gap:plugin name="SalesforceOAuthPlugin" />
+    <plugins>
+                <plugin name="com.salesforce.sdkinfo" value="SFSDKInfoPlugin" />
+                <plugin name="com.salesforce.testrunner" value="SFTestRunnerPlugin" />
+               <plugin name="com.salesforce.oauth" value="SalesforceOAuthPlugin" />
+                <plugin name="Device" value="CDVDevice" />
+                <plugin name="Logger" value="CDVLogger" />
+                <plugin name="Compass" value="CDVLocation" />
+                <plugin name="Accelerometer" value="CDVAccelerometer" />
+                <plugin name="Camera" value="CDVCamera" />
+                <plugin name="NetworkStatus" value="CDVConnection" />
+               <plugin name="Contacts" value="CDVContacts" />
+                <plugin name="Debug Console" value="CDVDebugConsole" />
+                <plugin name="Echo" value="CDVEcho" />
+                <plugin name="File" value="CDVFile" />
+                <plugin name="FileTransfer" value="CDVFileTransfer" />
+                <plugin name="Geolocation" value="CDVLocation" />
+               <plugin name="Notification" value="CDVNotification" />
+                <plugin name="Media" value="CDVSound" />
+                <plugin name="Capture" value="CDVCapture" />
+                <plugin name="SplashScreen" value="CDVSplashScreen" />
+                <plugin name="Battery" value="CDVBattery" />
+                <plugin name="Globalization" value="CDVGlobalization" />
+                <plugin name="InAppBrowser" value="CDVInAppBrowser" />
+            </plugins>     
+    
 </widget>
