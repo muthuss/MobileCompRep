@@ -15,7 +15,7 @@ var remoteAccessConsumerKey = "3MVG9Iu66FKeHhINkB1l7xt7kR8czFcCTUhgoA8Ol2Ltf1eYH
 var oauthRedirectURI = "testsfdc:///mobilesdk/detect/oauth/done";
 
 // The authorization/access scope(s) you wish to define for your application.
-var oauthScopes = ["web","api"];
+var oauthScopes = ["web"]; //,"api"
 
 // The start data associated with the application.  Use SFHybridApp.LocalAppStartData for a "local"
 // Cordova-based application, and SFHybridApp.RemoteAppStartData for a Visualforce-based
